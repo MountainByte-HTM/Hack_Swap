@@ -1,0 +1,103 @@
+/* Main container styling */
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the user list */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  li button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button to start the chat */
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Full-screen container for the chat */
+  .chat-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    div {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    li button {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
